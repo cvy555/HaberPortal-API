@@ -1,0 +1,6 @@
+@HaberPortal_API_HostAddress = http://localhost:5090
+
+GET {{HaberPortal_API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

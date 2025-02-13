@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaberPortal-API", "HaberPortal-API\HaberPortal-API.csproj", "{D711BCCF-9348-4C52-BB91-3821530EF7F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D711BCCF-9348-4C52-BB91-3821530EF7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D711BCCF-9348-4C52-BB91-3821530EF7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D711BCCF-9348-4C52-BB91-3821530EF7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D711BCCF-9348-4C52-BB91-3821530EF7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D241138F-DCB8-44FA-A1D6-C35A9FBB4126}
+	EndGlobalSection
+EndGlobal
