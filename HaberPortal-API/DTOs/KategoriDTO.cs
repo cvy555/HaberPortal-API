@@ -2,6 +2,6 @@
 {
     public class KategoriDTO
     {
-        public string Ad { get; set; }
+        public string Ad { get; set; } = string.Empty;
     }
 }

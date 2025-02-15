@@ -4,7 +4,7 @@
     {
         public int HaberID { get; set; }
         public int EtiketID { get; set; }
-        public Haber Haber { get; set; }
-        public Etiket Etiket { get; set; }
+        public Haber Haber { get; set; } = new Haber();
+        public Etiket Etiket { get; set; } = new Etiket();
     }
 }

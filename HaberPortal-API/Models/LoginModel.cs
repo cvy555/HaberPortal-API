@@ -2,7 +2,8 @@
 {
     public class LoginModel
     {
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string Identifier { get; set; } = string.Empty; // Email, Phone Number veya Username
+        public string Password { get; set; } = string.Empty;
     }
+
 }
