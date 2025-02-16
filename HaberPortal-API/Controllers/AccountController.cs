@@ -18,6 +18,7 @@ namespace HaberPortal_API.Controllers
         private readonly IConfiguration _configuration;
 
         public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, IConfiguration configuration)
+            : base() // Bu satırı ekleyin
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -41,9 +42,9 @@ namespace HaberPortal_API.Controllers
         {
             ApplicationUser user = await _userManager.FindByEmailAsync(model.Identifier) ??
                                    await _userManager.FindByNameAsync(model.Identifier) ??
-                                   await _userManager.Users.FirstOrDefaultAsync(u => u.PhoneNumber == model.Identifier);
+                                   await _userManager.Users.FirstOrDefaultAsync(u => u.PhoneNumber == model.Identifier) ?? new ApplicationUser();
 
-            if (user != null)
+            if (user.Id != null)
             {
                 var result = await _signInManager.PasswordSignInAsync(user.UserName ?? string.Empty, model.Password, false, false);
                 if (result.Succeeded)

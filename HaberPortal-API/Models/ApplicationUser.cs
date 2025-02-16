@@ -6,6 +6,6 @@ namespace HaberPortal_API.Models
     public class ApplicationUser : IdentityUser
     {
         public string AdSoyad { get; set; } = string.Empty;
-        public List<Haber> Haberler { get; set; } = new List<Haber>(); // Haber ile ilişki
+        public List<Haber> Haberler { get; set; } = new List<Haber>();     
     }
 }
